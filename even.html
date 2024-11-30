@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Numbers</title>
+    <script>
+        // JavaScript function to check whether numbers from 0 to 15 are odd or even
+        function checkOddEven() {
+            // Loop from 0 to 15
+            for (let i = 0; i <= 15; i++) {
+                if (i % 2 === 0) {
+                    // If the number is divisible by 2 (even)
+                    document.getElementById("result").innerHTML += i + " is Even <br>";
+                } else {
+                    // If the number is not divisible by 2 (odd)
+                    document.getElementById("result").innerHTML += i + " is Odd <br>";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Check Odd or Even Numbers from 0 to 15</h1>
+
+    <button onclick="checkOddEven()">Check Odd or Even</button>
+
+    <div id="result"></div>
+</body>
+</html>
